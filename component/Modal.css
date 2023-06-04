@@ -1,0 +1,115 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  position: fixed;
+  top: 1vh;
+  left: 42.5%;
+  width: 15%;
+  z-index: 100;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.header.lose {
+  background: #ff0000;
+  padding-top: 10px;
+}
+
+.header.win {
+  background: #7551fa;
+  padding-top: 10px;
+}
+
+.header h2 {
+  margin: 1rem;
+  color: white;
+}
+
+.content {
+  padding: 1rem;
+}
+
+.button {
+  margin-bottom: 30px;
+  align-items: center;
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.button.win {
+  color: #7551fa;
+}
+
+.button.win:hover,
+.button.win:focus {
+  background-color: #582bfc;
+  color: #ffffff;
+}
+
+.button.lose {
+  color: #ff0000;
+}
+
+.button.lose:hover,
+.button.lose:focus {
+  background-color: #a50c0c;
+  color: #ffffff;
+}
+
+.button:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, 0.7);
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, 0.08);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+  .modal {
+    top: 10%;
+    left: 5%;
+    width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  .modal {
+    top: 1.5%;
+    left: 2%;
+    width: 96%;
+  }
+}
